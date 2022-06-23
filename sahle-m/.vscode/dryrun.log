@@ -1,0 +1,26 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory `/Users/mberri/Desktop/sahle-m'
+gcc -Wall -Wextra -Werror -c so_long.c -I./ -o so_long.o
+ 
+gcc -Wall -Wextra -Werror -c image.c -I./ -o image.o
+gcc -Wall -Wextra -Werror -c key.c -I./ -o key.o
+gcc -Wall -Wextra -Werror -c map.c -I./ -o map.o
+gcc -Wall -Wextra -Werror -c so_long_utl/check_everything.c -I./ -o so_long_utl/check_everything.o
+gcc -Wall -Wextra -Werror -c so_long_utl/ft_strdup_without_newline.c -I./ -o so_long_utl/ft_strdup_without_newline.o
+gcc -Wall -Wextra -Werror -c so_Long_utl/ft_strjoin_without_newline.c -I./ -o so_Long_utl/ft_strjoin_without_newline.o
+gcc -Wall -Wextra -Werror -c so_long_utl/lose_game.c -I./ -o so_long_utl/lose_game.o
+gcc -Wall -Wextra -Werror -c so_long_utl/print_error.c -I./ -o so_long_utl/print_error.o
+gcc -Wall -Wextra -Werror -c so_long_utl/print.c -I./ -o so_long_utl/print.o
+gcc -Wall -Wextra -Werror -c so_long_utl/put_image.c -I./ -o so_long_utl/put_image.o
+gcc -Wall -Wextra -Werror -c so_Long_utl/win_game.c -I./ -o so_Long_utl/win_game.o
+gcc -Wall -Wextra -Werror -c gnl/get_next_line.c -I./ -o gnl/get_next_line.o
+gcc -Wall -Wextra -Werror -c gnl/get_next_line_utils.c -I./ -o gnl/get_next_line_utils.o
+gcc -Wall -Wextra -Werror -c libft/ft_bzero.c -I./ -o libft/ft_bzero.o
+gcc -Wall -Wextra -Werror -c Libft/ft_calloc.c -I./ -o Libft/ft_calloc.o
+gcc -Wall -Wextra -Werror -c Libft/ft_itoa.c -I./ -o Libft/ft_itoa.o
+gcc -Wall -Wextra -Werror -c Libft/ft_memset.c -I./ -o Libft/ft_memset.o
+gcc -Wall -Wextra -Werror -c Libft/ft_substring.c -I./ -o Libft/ft_substring.o
+make all -C libft/
+gcc -o so_long so_long.o image.o key.o map.o ./so_long_utl/check_everything.o ./so_long_utl/ft_strdup_without_newline.o ./so_Long_utl/ft_strjoin_without_newline.o ./so_long_utl/lose_game.o ./so_long_utl/print_error.o ./so_long_utl/print.o ./so_long_utl/put_image.o ./so_Long_utl/win_game.o ./gnl/get_next_line.o ./gnl/get_next_line_utils.o ./libft/ft_bzero.o ./Libft/ft_calloc.o ./Libft/ft_itoa.o ./Libft/ft_memset.o ./Libft/ft_substring.o -Lmlx -lmlx -framework OpenGL -framework AppKit	
+make: Leaving directory `/Users/mberri/Desktop/sahle-m'
+ 
